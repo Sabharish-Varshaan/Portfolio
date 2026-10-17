@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import TwinIcon from "./TwinIcon";
 
 function clean(t: string) {
   return t.replace(/\s*[\u2014\u2013]\s*/g, ", ").replace(/,\s*,/g, ",");
@@ -92,13 +93,16 @@ export default function TwinChat() {
   return (
     <>
       <button className={`twin-fab ${open ? "hide" : ""}`} tabIndex={open ? -1 : 0} onClick={() => setOpen(true)} aria-label="Chat with my Digital Twin">
-        <b className="dot" /> Ask my Digital Twin
+        <TwinIcon size={18} /> Ask my Digital Twin
       </button>
       <div className={`twin ${open ? "open" : ""}`} role="dialog" aria-label="Digital Twin chat" aria-hidden={!open} inert={!open}>
         <div className="twin-head">
-          <div>
-            <strong>Digital Twin</strong>
-            <span><b className="dot" /> Answers about my career</span>
+          <div className="twin-id">
+            <span className="twin-avatar"><TwinIcon size={20} /></span>
+            <div>
+              <strong>Digital Twin</strong>
+              <span><b className="dot" /> Answers about my career</span>
+            </div>
           </div>
           <button onClick={() => setOpen(false)} aria-label="Close chat">✕</button>
         </div>
