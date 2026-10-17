@@ -6,6 +6,7 @@ export const profile = {
   email: "sabharishvarshaans@gmail.com",
   linkedin: "https://www.linkedin.com/in/sabharish-varshaan-s-729a52294",
   github: "https://github.com/Sabharish-Varshaan",
+  resume: "/Sabharish_Varshaan_Resume.pdf",
 };
 
 export const about = [

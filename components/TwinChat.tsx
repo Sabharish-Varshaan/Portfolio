@@ -119,6 +119,7 @@ export default function TwinChat() {
           <input ref={inputRef} value={input} onChange={(e) => setInput(e.target.value)} placeholder="Ask about my experience…" maxLength={500} />
           <button disabled={busy || !input.trim()} aria-label="Send">↑</button>
         </form>
+        <p className="twin-note">Messages are processed by a third-party AI.</p>
       </div>
     </>
   );

@@ -36,6 +36,7 @@ export default function Home() {
               <a className="btn" href="#work">View work <span>→</span></a>
               <a className="btn ghost" href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
               <a className="btn ghost" href={`mailto:${profile.email}`}>Email</a>
+              <a className="btn ghost" href={profile.resume} download>Résumé ↓</a>
             </div>
             <ul className="chips">
               {["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"].map((s) => <TechChip key={s} name={s} />)}
@@ -159,6 +160,7 @@ export default function Home() {
               <a className="btn" href={`mailto:${profile.email}`}>{profile.email}</a>
               <a className="btn ghost" href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
               <a className="btn ghost" href={profile.github} target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a className="btn ghost" href={profile.resume} download>Download résumé ↓</a>
             </div>
           </Reveal>
         </section>
