@@ -1,0 +1,23 @@
+# secrets
+.env
+.env*
+!.env.example
+
+# deps & build
+node_modules
+.next
+out
+build
+*.tsbuildinfo
+next-env.d.ts
+
+# vercel
+.vercel
+
+# local / personal files
+*.pdf
+reviews.md
+.DS_Store
+*.log
+npm-debug.log*
+.claude
